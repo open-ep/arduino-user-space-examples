@@ -16,9 +16,7 @@
  *   panel CLK  -> PC5 (SCK)
  *   panel CS   -> PC4
  *   panel DC   -> PC3
- *   panel RST  -> PD0 (pin 10) — PC0 on this board is stuck high (can't drive
- *                low; likely damaged by the earlier 5V back-feed) and PC0 also
- *                doubles as LED_BUILTIN, so RST lives on PD0 instead
+ *   panel RST  -> PD0
  *   panel BUSY -> PD2
  *   VCC -> 3V3, GND -> GND
  */
@@ -28,7 +26,7 @@
 
 #define EPD_CS_PIN PC4
 #define EPD_DC_PIN PC3
-#define EPD_RST_PIN PD0   // pin 10 (PC0 is stuck high on this board)
+#define EPD_RST_PIN PD0
 #define EPD_BUSY_PIN PD2
 
 #define EPD_BYTES (250 * 16)
