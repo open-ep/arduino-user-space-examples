@@ -27,7 +27,7 @@
 
 #define EPD_CS_PIN PC4
 #define EPD_DC_PIN PC3
-#define EPD_RST_PIN PD0   // pin 10 (PC0 is stuck high on this board)
+#define EPD_RST_PIN PD0
 #define EPD_BUSY_PIN PD2
 
 // image stores 31 bytes/column (rows 0-123); rows 124-127 are a constant 0xFF
